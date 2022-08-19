@@ -32,7 +32,264 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+body {
+  overflow: hidden;
+}
+
+.allLogin {
+  display: flex;
+  flex-direction: row;
+  background-image: url("./Pinky.jpg");
+  height: 1000px;
+}
+
+.login {
+  width: 50%;
+  height: 500px;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+
+.rightLogin {
+  width: 50%;
+  align-items: center;
+  display: block;
+  margin-top: 200px;
+  margin-left: 150px;
+  height: auto;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .allLogin {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./Pinky.jpg");
+    height: 1000px;
+  }
+
+  .login{
+    width: 100%;
+  }
+  .rightLogin{
+    width: 100%;
+  }
+}
+
+social {
+  display: flex;
+  flex-direction: column;
+}
+
+.rounded {
+  margin-bottom: 10px;
+}
+
+.flex-c-m {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+a {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #a64bf4;
+}
+
+.home {
+  background-image: url("../src/Pinky.jpg");
+}
+
+.footer{
+  margin-top: 70px;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+  .container{
+    width:250px;
+    height:250px;
+    margin:20px auto 0 auto;
+    background:#222;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .react-logo{
+    display: inline-block;
+    border-radius:50%;
+    border:10px solid #00d8ff;
+
+    animation-name:rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  }
+
+  .react-logo , .react-logo:before , .react-logo:after{
+    position:absolute;
+    display: inline-block;
+    width:500px;
+    height:250px;
+    border-radius:50%;
+    border:10px solid #00d8ff;
+  }
+
+  .nucleo , .react-logo , .react-logo:before , .react-logo:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nucleo{
+    width:40px;
+    height:40px;
+    border-radius:100%;
+    background:#00d8ff;
+  }
+
+  .react-logo:before , .react-logo:after{
+    content:"";
+  }
+
+  .react-logo:after{
+    transform:rotate(-57deg);
+  }
+
+  .react-logo:before{
+    transform:rotate(57deg);
+  }
+  
+.title{
+  font-size:60px;
+  background:#222;
+  color:#00d8ff;
+  width:250px;
+  margin:2px auto;
+  text-align:center;
+}
+
+  @keyframes rotate{
+
+    100%{
+      transform:rotate(360deg);
+    }
+  }
